@@ -1,9 +1,15 @@
-import React from "react";
+import React from 'react';
+import '../styles/Button.css';
 
-export default function Button({ value, onBtnClick }) {
+const Button = ({ children, onClick, className = '' }) => {
   return (
-    <>
-      <button onClick={() => onBtnClick(value)}>{value}</button>
-    </>
+    <button 
+      className={`calculator-button ${className}`}
+      onClick={onClick}
+    >
+      {children}
+    </button>
   );
-}
+};
+
+export default Button;

@@ -1,0 +1,27 @@
+.calculator-display {
+    background-color: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    margin-bottom: 15px;
+    padding: 15px 10px;
+    position: relative;
+    min-height: 50px;
+  }
+  
+  .display-value {
+    text-align: right;
+    font-size: 24px;
+    font-family: monospace;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+  }
+  
+  .operator-indicator {
+    position: absolute;
+    top: 5px;
+    left: 10px;
+    font-size: 18px;
+    color: #ff9f0a;
+    font-weight: bold;
+  }
